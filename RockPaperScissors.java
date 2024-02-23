@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class RockPaperScissors {
     public static void main(String[] args) {
         // プレイヤーの手を選択
-        String playerChoice = "rock"; // プレイヤーの選択 ("rock", "paper", "scissors" のいずれか)
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("じゃんけんを始めます。rock, paper, scissors のいずれかを入力してください:");
+        String playerChoice = scanner.next();
 
         // コンピューターの手をランダムで選択
         String[] choices = {"rock", "paper", "scissors"};
@@ -18,5 +22,8 @@ public class RockPaperScissors {
         } else {
             System.out.println("コンピューターの勝ちです！");
         }
+
+        // スキャナーを閉じる
+        scanner.close();
     }
 }
