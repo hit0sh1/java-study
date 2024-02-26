@@ -1,5 +1,4 @@
 public class OthelloGame {
-  
     private char[][] board;
     private char currentPlayer;
 
@@ -11,6 +10,10 @@ public class OthelloGame {
 
     private void initializeBoard() {
         // Initialize the Othello board with starting pieces
+        board[3][3] = 'W';
+        board[4][4] = 'W';
+        board[3][4] = 'B';
+        board[4][3] = 'B';
     }
 
     private void printBoard() {
@@ -43,6 +46,4 @@ public class OthelloGame {
         OthelloGame game = new OthelloGame();
         game.playGame();
     }
-
-
 }
