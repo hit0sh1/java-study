@@ -27,6 +27,7 @@ public class OthelloGame {
 
     private void makeMove(int row, int col) {
         // Make a move on the board
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     private boolean hasValidMoves() {
