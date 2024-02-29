@@ -17,7 +17,12 @@ public class OthelloGame {
     }
 
     private void printBoard() {
-        // Print the current state of the Othello board
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                System.out.print(board[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     private boolean isValidMove(int row, int col) {
@@ -27,7 +32,6 @@ public class OthelloGame {
 
     private void makeMove(int row, int col) {
         // Make a move on the board
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     private boolean hasValidMoves() {
