@@ -32,6 +32,7 @@ public class OthelloGame {
 
     private void makeMove(int row, int col) {
         // Make a move on the board
+        board[row][col] = currentPlayer;
     }
 
     private boolean hasValidMoves() {
