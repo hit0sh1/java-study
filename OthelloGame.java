@@ -41,7 +41,8 @@ public class OthelloGame {
     }
 
     private void switchPlayer() {
-        // Switch the current player
+    // Switch the current player
+    currentPlayer = (currentPlayer == 'B') ? 'W' : 'B';
     }
 
     public void playGame() {
