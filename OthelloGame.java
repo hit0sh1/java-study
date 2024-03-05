@@ -47,6 +47,20 @@ public class OthelloGame {
 
     public void playGame() {
         // Start and play the Othello game
+        while (true) {
+            printBoard();
+            
+            if (!hasValidMoves()) {
+                switchPlayer();
+                if (!hasValidMoves()) {
+                    break; // Game over if neither player has valid moves
+                }
+            }
+            
+            // Implement the game logic for making moves here
+            
+            switchPlayer(); // Switch to the next player
+        }
     }
 
     public static void main(String[] args) {
